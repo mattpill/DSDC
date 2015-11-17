@@ -1,0 +1,642 @@
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+/*
+   HEADER SECTION
+   ========================================================================== */
+/* line 6, ../scss/style.scss */
+.header-section {
+  position: fixed;
+  z-index: 999;
+  min-width: 100%;
+}
+
+/* line 14, ../scss/style.scss */
+.contain-to-grid {
+  background-color: rgba(255, 255, 255, 0.97);
+}
+
+/* line 19, ../scss/style.scss */
+.header-fill {
+  background: #fff;
+  height: 150px;
+}
+.header-fill-project-page {
+  background: #fff;
+  height: 125px;
+}
+/* line 22, ../scss/style.scss */
+.header-fill .tablet-mobile-logo img {
+  padding-top: 30px;
+}
+
+/* line 27, ../scss/style.scss */
+.full-width {
+  min-width: 100%;
+}
+
+/*
+   TOPBAR NAVGATION
+   ========================================================================== */
+#logo-image {
+  max-width: 175px;
+  margin-top: 10px;
+  margin-left: 0;
+}
+#logo-image2 {
+  max-width: 40px;
+  margin-top: 10px;
+  margin-left: 0;
+}
+.nav-logo-header-2 {
+  max-width: 45px;
+  margin-left: 20px;
+}
+/* line 41, ../scss/style.scss */
+.top-bar {
+  background: none;
+  padding: 45px 0 70px 0;
+  transition: all 0.5s ease 0.1s;
+      max-width: 74.5rem;
+}
+/* line 46, ../scss/style.scss */
+.top-bar ul.title-area img {
+  margin: -10px 0 0 0;
+}
+/* line 49, ../scss/style.scss */
+.top-bar .top-bar-section ul {
+  background: none;
+}
+/* line 52, ../scss/style.scss */
+.top-bar .top-bar-section ul li a:not(.button), .top-bar .top-bar-section ul li.active a:not(.button) {
+  background: none;
+  line-height: 30px;
+  font-size: 12px;
+  padding: 0;
+  margin: 5px 0 0 0;
+  text-transform: uppercase;
+}
+/* line 61, ../scss/style.scss */
+.top-bar .top-bar-section ul li a:not(.button):hover {
+  background: none;
+  color: #222;
+}
+/* line 67, ../scss/style.scss */
+.top-bar .top-bar-section ul li.active a:not(.button) {
+  color: #222;
+}
+/* line 70, ../scss/style.scss */
+.top-bar .top-bar-section ul li.active a:not(.button):hover {
+  background: none;
+}
+/* line 74, ../scss/style.scss */
+.top-bar .top-bar-section ul li {
+  margin-left: 30px;
+}
+/* line 76, ../scss/style.scss */
+.top-bar .top-bar-section ul li a {
+  color: #888;
+}
+/* line 82, ../scss/style.scss */
+.top-bar .top-bar-section ul li:hover:not(.has-form) > a {
+  color: #333;
+}
+/* line 85, ../scss/style.scss */
+.top-bar .top-bar-section li ul.dropdown {
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #888;
+}
+/* line 89, ../scss/style.scss */
+.top-bar .top-bar-section li ul.dropdown li {
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  padding: 5px 15px 5px 15px;
+}
+/* line 95, ../scss/style.scss */
+.top-bar .top-bar-section li ul.dropdown li a:not(.button):hover, .top-bar .top-bar-section li ul.dropdown li a:not(.button) {
+  background: none;
+  color: #222;
+  border-bottom: none;
+  padding: 20px -4px 40px 45px;
+}
+/* line 101, ../scss/style.scss */
+.top-bar .top-bar-section ul.dropdown li:hover:not(.has-form) > a:not(.button) {
+  background: none;
+  color: #222;
+}
+/* line 106, ../scss/style.scss */
+.top-bar .has-dropdown > a:after {
+  border-color: rgba(0, 0, 0, 0.5) transparent transparent;
+  margin-top: -5px;
+}
+.navbar-right {
+  margin-right: 50px;
+}
+
+/*
+   CONTENT SECTION - HOME
+   ========================================================================== */
+/* line 118, ../scss/style.scss */
+.content-section .main-content {
+  margin-top: 35px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+.grid {
+  width: auto;
+  margin: 0 15px;
+}
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 0;
+  min-width: 320px;
+  height: auto;
+  width: 50%;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.9;
+}
+
+.grid figure figcaption {
+  padding: 1em;
+  color: #fff;
+  /*text-transform: uppercase;*/
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+figure.effect-sarah {
+  background: #222222;
+}
+
+figure.effect-sarah img {
+  max-width: none;
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+figure.effect-sarah:hover img {
+  opacity: 0.4;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-sarah figcaption {
+  text-align: left;
+}
+
+/*figure.effect-sarah h2 {
+  position: relative;
+  overflow: hidden;
+  padding: 0.5em 0;
+}
+
+figure.effect-sarah h2::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+figure.effect-sarah:hover h2::after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-sarah:hover h2 {
+  color: #fff;
+}*/
+
+figure.effect-sarah p, figure.effect-sarah h2 {
+  color: #fff;
+  padding: 1em 0;
+  padding-top: 0;
+  opacity: 0;
+  font-size: 18pt;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+figure.effect-sarah:hover p, figure.effect-sarah:hover h2 {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+
+/*
+   CONTENT SECTION - HOME
+   ========================================================================== */
+  
+  .content-section {
+    margin-bottom: 50px;
+  }
+
+  .project-description {
+    padding-left: 10%;
+  }
+
+
+@media screen and (max-width: 50em) {
+  .content {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .grid figure {
+    display: inline-block;
+    float: none;
+    margin: 10px auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1800px) {
+  #photos {
+  /*-moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;*/
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+/*  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;*/
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+/*  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;*/
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+/*  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;*/
+  }
+}
+
+/*
+   FOOTER SECTION
+   ========================================================================== */
+/* line 128, ../scss/style.scss */
+.footer-section {
+  background: #fff;
+  text-align: center;
+  padding-top: 100px; 
+  color: #333;
+}
+/* line 131, ../scss/style.scss */
+/*.footer-section p {
+  color: #333;
+  margin-top: 50px;
+}*/
+
+.footer-section p {
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.footer-section a {
+  color: #333;
+  margin-top: 50px;
+  font-size: 0.8rem;
+}
+
+.footer-left {
+  float: left;
+}
+
+.footer-middle {
+  float: none;
+  text-align: center;
+}
+
+.footer-right {
+  float: right;
+}
+
+/* line 138, ../scss/style.scss */
+.padding-on-my-header {
+  padding: 20px 0.9375rem 60px 0.9375rem;
+}
+/* line 140, ../scss/style.scss */
+.padding-on-my-header ul.title-area img {
+  margin: -5px 0 0 0;
+}
+
+
+
+/*
+   Projects
+   ========================================================================== */
+  
+
+
+html, body, .projectContainer
+{
+    height: 100%;
+}
+
+.Container:before
+{
+    content: '';
+    height: 100%;
+    float: left;
+}
+
+.Header
+{
+    margin-bottom: 10px;
+    background-color: #6ea364;
+}
+.Content
+{
+    position: relative;
+    z-index: 1;
+}
+.project-copy {
+  margin-top: 50px;
+  position: fixed;
+  left: 70%;
+}
+.project-copy a {
+  color: #222;
+}
+.Content:after
+{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.Wrapper
+{
+    position: absolute;
+    width: 100%;
+    /*height: 100%;*/
+}
+.Wrapper > div
+{
+    height: 100%;
+}
+
+.LeftContent
+{
+    overflow: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.project-images img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.RightContent
+{
+    float: right;
+    max-width: 40%;
+    padding-right: 6%;
+}
+
+.RightContent h1 {
+  font-size: 1.6em;
+  margin-top: -8px;
+}
+
+
+#projectFooter {
+
+position: fixed;
+
+bottom: 0;
+
+width: 100%;
+
+height: 12%; /* choose any height */
+
+}
+
+/*
+   Contact
+   ========================================================================== */
+.contact-nav {
+  padding: 25px 0 0 0;
+}
+
+.contact_body {
+  background-color: #000;
+}
+
+.contact_info {
+  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact_info h1, .contact_info p, .contact_info a {
+  color: #fff;
+}
+
+.contact_info p {
+  margin: 50px 0;
+}
+.contact_info ul {
+  list-style-type: none;
+  margin-left:auto;
+}
+
+@media only screen and (max-width: 780px) {
+
+  .contain-to-grid .top-bar {
+    margin: 5% 10%;
+  }
+
+  #logo-image2 {
+    margin-top: 15px;
+  }
+
+  .Wrapper > div {
+    height: auto;
+  }
+  .RightContent {
+    margin-top: 15%;
+    max-width: 90%;
+    height: 200px;
+  }
+  #projectFooter {
+    margin-top: 200%;
+  }
+  .footer-section{
+    min-height: 0;
+  }
+  .footer-section p {
+    margin-top: 0;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  /* line 172, ../scss/style.scss */
+  .top-bar {
+    margin-top: 0;
+    padding: 0;
+    float: none;
+  }
+  /* line 177, ../scss/style.scss */
+  .top-bar .toggle-topbar.menu-icon a {
+    color: #222;
+  }
+  /* line 179, ../scss/style.scss */
+  .top-bar .toggle-topbar.menu-icon a:after {
+    box-shadow: 0 10px 0 1px #222, 0 16px 0 1px #222, 0 22px 0 1px #222;
+  }
+  /* line 184, ../scss/style.scss */
+  .top-bar ul.title-area img {
+    margin: -2px 0 0;
+    width: 145px;
+  }
+  /* line 189, ../scss/style.scss */
+  .top-bar .top-bar-section ul {
+    background: rgba(255,255,255,0.2);
+  }
+  /* line 191, ../scss/style.scss */
+  .top-bar .top-bar-section ul li {
+    margin-left: 0;
+  }
+  /* line 194, ../scss/style.scss */
+  .top-bar .top-bar-section ul li > a {
+    background: rgba(34,34,34,0.8);
+    border-radius: 0;
+    font-size: 0.9rem;
+  }
+  /* line 200, ../scss/style.scss */
+  .top-bar .top-bar-section ul li:not(.has-form) a:not(.button) {
+    background: none;
+    color: #222;
+    padding: 10px 15px;
+    margin-top: 0;
+  }
+  /* line 205, ../scss/style.scss */
+  .top-bar .top-bar-section ul li:not(.has-form) a:not(.button):hover {
+    background: rgba(34,34,34,0.8);
+    color: #fff;
+    margin-top: 0;
+  }
+  /* line 212, ../scss/style.scss */
+  .top-bar .top-bar-section ul li.active:not(.has-form) a:not(.button) {
+    background: rgba(34,34,34,0.8);
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 0;
+  }
+  /* line 217, ../scss/style.scss */
+  .top-bar .top-bar-section ul li.active:not(.has-form) a:not(.button):hover {
+    background: rgba(34,34,34,0.8);
+    margin-top: 0;
+  }
+
+  /* line 226, ../scss/style.scss */
+  .top-bar.padding-on-my-header ul.title-area img {
+    margin: 5px 13px 0;
+    width: 35px;
+  }
+
+  /* line 231, ../scss/style.scss */
+  .top-bar.expanded {
+    margin-top: 0;
+    padding: 0;
+    float: none;
+  }
+  /* line 235, ../scss/style.scss */
+  .top-bar.expanded .toggle-topbar.menu-icon a {
+    color: #ccc;
+  }
+  /* line 237, ../scss/style.scss */
+  .top-bar.expanded .toggle-topbar.menu-icon a:after {
+    box-shadow: 0 10px 0 1px #ccc, 0 16px 0 1px #ccc, 0 22px 0 1px #ccc;
+  }
+
+  /* line 244, ../scss/style.scss */
+  .header-fill {
+    height: 40px;
+  }
+}

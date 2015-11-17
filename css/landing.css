@@ -1,0 +1,43 @@
+.header-section {
+	height: 50px;
+}
+
+.header-tilda {
+	font-size: 5em;
+	margin-left: 50px;
+	font-weight: 200;
+}
+
+.main-text {
+	margin-top: 10%;
+	margin-right: 10%;
+}
+
+.main-text h1 {
+	margin-bottom: 50px;
+	font-weight: bold;
+}
+
+.main-text p {
+	margin-bottom: 25px;
+}
+
+.main-text a{
+	line-height: 30px;
+	color: #000;
+}
+
+@media only screen and (max-width: 500px) {
+	.header-tilda {
+		margin: 0;
+	}
+
+	.main-text h1 {
+		font-size: 1.8em;
+	}
+
+	.main-content {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
