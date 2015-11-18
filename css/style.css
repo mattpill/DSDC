@@ -11,7 +11,7 @@
 
 }
 
-body, h1, h2, h3, h4, h5, h6, p, a {
+body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   font-family: 'effraregular';
 }
 
@@ -103,6 +103,7 @@ body, h1, h2, h3, h4, h5, h6, p, a {
 /* line 67, ../scss/style.scss */
 .top-bar .top-bar-section ul li.active a:not(.button) {
   color: #222;
+  font-family: "effraregular";
 }
 /* line 70, ../scss/style.scss */
 .top-bar .top-bar-section ul li.active a:not(.button):hover {
@@ -222,7 +223,7 @@ body, h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .grid figure h2 {
-  word-spacing: -0.15em;
+  /*word-spacing: -0.15em;*/
   font-weight: 300;
 }
 
@@ -300,7 +301,7 @@ figure.effect-sarah p, figure.effect-sarah h2 {
   padding: 1em 0;
   padding-top: 0;
   opacity: 0;
-  font-size: 18pt;
+  font-size: 14pt;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(100%,0,0);
@@ -451,7 +452,7 @@ html, body, .projectContainer
 }
 .project-copy {
   margin-top: 50px;
-  position: fixed;
+  /*position: fixed;*/
   left: 70%;
 }
 .project-copy a {
@@ -503,7 +504,7 @@ html, body, .projectContainer
 
 #projectFooter {
 
-position: fixed;
+position: relative;
 
 bottom: 0;
 
@@ -561,7 +562,8 @@ height: 12%; /* choose any height */
     height: 200px;
   }
   #projectFooter {
-    margin-top: 200%;
+    margin-top: 160%;
+    position: none;
   }
   .footer-section{
     min-height: 0;
@@ -667,5 +669,11 @@ height: 12%; /* choose any height */
   /* line 244, ../scss/style.scss */
   .header-fill {
     height: 40px;
+  }
+  .RightContent {
+    float: none;
+    margin: 15%;
+    max-width: 70%;
+    padding: 0;
   }
 }
