@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
 
-		if (document.location.pathname.indexOf("/dsdc/projects/")) {
+		if (window.location.href.indexOf("projects") > -1) {
 			if (scroll >= 50) {
 				$('#logo-image').attr('src', '../img/dsdc-logo2.png')
 				$(".important-class").addClass("padding-on-my-header");
@@ -12,16 +12,16 @@ jQuery(document).ready(function($){
 			}
 			if (scroll < 50) {
 				$(".important-class").removeClass("padding-on-my-header");
-				$('#logo-image').attr('src', '../img/dsdc-logo1.png')
+				$('#logo-image').attr('src', '../img/dsdc-logo1.png');
 			}
 		} else {
 			if (scroll >= 50) {
-				$('#logo-image').attr('src', 'img/dsdc-logo2.png')
+				$('#logo-image').attr('src', 'img/dsdc-logo2.png');
 				$(".important-class").addClass("padding-on-my-header");
 			}
 			if (scroll < 50) {
 				$(".important-class").removeClass("padding-on-my-header");
-				$('#logo-image').attr('src', 'img/dsdc-logo1.png')
+				$('#logo-image').attr('src', 'img/dsdc-logo1.png');
 			}
 		}
 	}).resize(function(){
