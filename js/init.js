@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();
 
-		if (document.location.pathname.indexOf("/projects/") === 0) {
+		if (document.location.pathname.indexOf("/projects/")) {
 			if (scroll >= 50) {
 				$('#logo-image').attr('src', '../img/dsdc-logo2.png')
 				$(".important-class").addClass("padding-on-my-header");
