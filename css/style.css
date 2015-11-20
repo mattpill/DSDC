@@ -159,7 +159,6 @@ body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
    ========================================================================== */
 /* line 118, ../scss/style.scss */
 .content-section .main-content {
-  margin-top: 35px;
   margin-left: 0;
   margin-right: 0;
   width: 100%;
@@ -433,10 +432,10 @@ html, body
     height: 100%;
 }
 
-.projectContainer {
+/*.projectContainer {
   min-height: 100%;
 }
-
+*/
 .projectContainer:after{
   content: "";
   display: block
@@ -539,7 +538,7 @@ height: 142px;
 }
 
 .contact_info p {
-  margin: 50px 0;
+  margin: 25px 0;
 }
 .contact_info ul {
   list-style-type: none;
