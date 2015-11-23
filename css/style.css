@@ -575,6 +575,16 @@ height: 142px;
   }
 }
 
+@media only screen and (max-width: 320px) {
+  #logo-image {
+    margin-top: 17px;
+  }
+
+  .grid {
+    margin: 0;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .footer-section {
     padding-top: 10%
