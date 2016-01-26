@@ -11,8 +11,13 @@
 
 }
 
+body {
+
+}
+
 body, h1, h2, h3, h4, h5, h6, p, a, ul, li {
   font-family: 'effraregular';
+  font-size: 1rem;
 }
 
 *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -523,8 +528,8 @@ height: 142px;
   padding: 25px 0 0 0;
 }
 
-.contact_body {
-  background-color: #000;
+.contact_body, .contact_body .header-section, .contact_body .header-fill, .contact_body .footer-section {
+  background-color: #f0f0f0;
 }
 
 .contact_info {
@@ -533,16 +538,20 @@ height: 142px;
   padding-right: 50px;
 }
 
-.contact_info h1, .contact_info p, .contact_info a {
-  color: #fff;
+.contact_info .contact_info h1, .contact_info h3, .contact_info p, .contact_info a {
+  color: #000;
 }
 
 .contact_info p {
-  margin: 25px 0;
+  margin: 15px 0;
 }
 .contact_info ul {
   list-style-type: none;
   margin-left:auto;
+}
+
+.contact_info a {
+  text-decoration: underline;
 }
 
 
